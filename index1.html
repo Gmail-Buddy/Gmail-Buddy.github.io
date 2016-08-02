@@ -40,17 +40,21 @@
                 <!--<article>-->
                     <header>
                         <p>
-                            <h1>Advanced Gmail Search...</h1>
+                            <h1>Advanced Gmail Search...</h1><hr/>
                         </p>
                     </header>
                     <section>
                         <h2>Which Gmail are you using?</h2>
-                        <p>
+                        <b>Default: Inbox for Gmail</b>
+                        <button onclick="toggleSection('#typeChange')">Change</button>
+                        <div id="typeChange">
                             <!--http://www.mkyong.com/jquery/how-to-select-a-radio-button-with-jquery/-->
                             <input type="radio" name="mailtype" value="1" checked>Inbox for Gmail (https://inbox.google.com/)</input><br/>
-                            <input type="radio" name="mailtype" value="2">Classic Gmail (https://mail.google.com/)</input><br/>
-                            <input type="radio" name="mailtype" value="3">Gmail For Work (https://mail.yourworkdomain.com/)</input>
-                        </p>
+                            <input type="radio" name="mailtype" value="2">Gmail Classic (https://mail.google.com/)</input><br/>
+                            <input type="radio" name="mailtype" value="3">Gmail For Work => </input>
+                            <input type="text" id="txtDomain" width="250px"/>
+                        </div>
+                        <hr/>
 
                     </section>
 
@@ -65,7 +69,7 @@
                         <button onclick="toggleSection('#sSubject')">Subject</button>
 
                         <button onclick="toggleSection('#sSubject')">Label</button>
-                        <button onclick="toggleSection('#sSubject')">Attachment Name</button>
+                        <button onclick="toggleSection('#sSubject')">Has Attachment</button>
                         <button onclick="toggleSection('#sSubject')">File Name</button>
                         <button onclick="toggleSection('#sSubject')">Folder</button>
                         <button onclick="toggleSection('#sSubject')">Category</button>
