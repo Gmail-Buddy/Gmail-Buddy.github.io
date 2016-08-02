@@ -25,6 +25,15 @@ hr {
     padding: 0;
 }
 
+button {
+    width: auto;
+    margin: 3px;
+}
+
+input[type="radio"] {
+    margin: 5px;
+}
+
 audio,
 canvas,
 iframe,
